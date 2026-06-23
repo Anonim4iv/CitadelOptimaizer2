@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citadel Optimizer — Максимальное ускорение Windows</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgMain: '#0d0e12',
+                        bgFrame: '#161920',
+                        accent: '#7042ff',
+                        accentHover: '#572ee6',
+                        textMain: '#8f9cae',
+                        borderCol: '#222632'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #0d0e12; color: #ffffff; scroll-behavior: smooth; }
+        .neon-glow:hover { box-shadow: 0 0 20px rgba(112, 66, 255, 0.6); }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="bg-bgFrame border-b border-borderCol fixed w-full z-50 px-6 py-4 flex justify-between items-center backdrop-blur-md bg-opacity-80">
+        <div class="flex items-center space-x-3">
+            <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center font-bold text-white shadow-[0_0_15px_rgba(112,66,255,0.5)]">C</div>
+            <span class="text-xl font-bold tracking-wider text-white">CITADEL<span class="text-accent">.CORE</span></span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-textMain font-medium">
+            <a href="#features" class="hover:text-white transition">Функции</a>
+            <a href="#preview" class="hover:text-white transition">Интерфейс</a>
+            <a href="#docs" class="hover:text-white transition">Документация</a>
+        </div>
+        <a href="#download" class="bg-accent hover:bg-accentHover text-white px-5 py-2 rounded-lg font-semibold transition neon-glow">Скачать</a>
+    </nav>
+
+    <section class="pt-32 pb-20 px-6 max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between min-h-screen">
+        <div class="lg:w-1/2 space-y-6 text-center lg:text-left">
+            <div class="inline-block bg-accent bg-opacity-10 text-accent border border-accent border-opacity-30 px-3 py-1 rounded-full text-sm font-semibold tracking-wide uppercase">
+                🔥 Next-Gen Tweaker 2026
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                Уничтожь лаги. <br><span class="text-accent shadow-sm">Освободи свой FPS.</span>
+            </h1>
+            <p class="text-textMain text-lg md:text-xl max-w-xl mx-auto lg:mx-0">
+                Citadel — это умный твикер и оптимизатор Windows нового поколения. Выжми максимум производительности, управляй софтом и кастомизируй систему в один клик.
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                <a href="optimizer.exe" class="bg-accent hover:bg-accentHover text-white text-lg font-bold px-8 py-4 rounded-xl transition text-center neon-glow flex items-center justify-center space-x-3">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Установить Citadel.exe</span>
+                </a>
+                <a href="#docs" class="border border-borderCol hover:bg-bgFrame text-white text-lg font-semibold px-8 py-4 rounded-xl transition text-center flex items-center justify-center">
+                    Документация
+                </a>
+            </div>
+        </div>
+        <div class="lg:w-1/2 mt-12 lg:mt-0 relative flex justify-center">
+            <div class="absolute inset-0 bg-accent opacity-10 blur-[120px] rounded-full"></div>
+            <img src="https://i.postimg.cc/7LCHRM25/5431695B-E870-41A2-B278-0A875BC8301F.png" alt="Citadel Interface" class="rounded-2xl border border-borderCol shadow-2xl relative z-10 max-w-full h-auto transform hover:scale-[1.02] transition duration-300">
+        </div>
+    </section>
+
+    <section id="features" class="py-20 bg-bgFrame border-y border-borderCol">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <h2 class="text-3xl md:text-4xl font-bold">Что умеет <span class="text-accent">Citadel</span>?</h2>
+                <p class="text-textMain">Полный боекомплект утилит для того, чтобы твоя операционная система работала на пределе возможностей.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-bgMain p-8 rounded-xl border border-borderCol hover:border-accent transition group">
+                    <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-lg flex items-center justify-center text-accent text-xl mb-6 group-hover:bg-accent group-hover:text-white transition">
+                        <i class="fa-solid fa-gauge-high"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Глубокие твики ОС</h3>
+                    <p class="text-textMain text-sm leading-relaxed">Отключение задержек сети, приоритезация активных задач, тюнинг дисков NTFS и полная остановка троттлинга процессора.</p>
+                </div>
+                <div class="bg-bgMain p-8 rounded-xl border border-borderCol hover:border-accent transition group">
+                    <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-lg flex items-center justify-center text-accent text-xl mb-6 group-hover:bg-accent group-hover:text-white transition">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Мониторинг ресурсов</h3>
+                    <p class="text-textMain text-sm leading-relaxed">Встроенный трекер нагрузки CPU, RAM и накопителей в реальном времени. Всегда знай, куда уходят ресурсы.</p>
+                </div>
+                <div class="bg-bgMain p-8 rounded-xl border border-borderCol hover:border-accent transition group">
+                    <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-lg flex items-center justify-center text-accent text-xl mb-6 group-hover:bg-accent group-hover:text-white transition">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Магазин приложений</h3>
+                    <p class="text-textMain text-sm leading-relaxed">Установка любого необходимого софта (Браузеры, Игры, Разработка) в один клик через тихий фоновый менеджер Winget.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="preview" class="py-20 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+            <h2 class="text-3xl md:text-4xl font-bold">Премиальный <span class="text-accent">UI дизайн</span></h2>
+            <p class="text-textMain">Эстетичный темный интерфейс в стиле киберпанк, не нагружающий глаза и систему.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-2">
+                <img src="https://i.postimg.cc/7LCHRM25/5431695B-E870-41A2-B278-0A875BC8301F.png" alt="Main Dashboard" class="rounded-xl border border-borderCol shadow-lg w-full">
+                <p class="text-center text-sm text-textMain">Панель глубокой оптимизации и системный лог</p>
+            </div>
+            <div class="space-y-2">
+                <img src="https://i.postimg.cc/7LCHRM25/5431695B-E870-41A2-B278-0A875BC8301F.png" alt="Monitoring Tab" class="rounded-xl border border-borderCol shadow-lg w-full">
+                <p class="text-center text-sm text-textMain">Панель живого мониторинга ресурсов CPU и RAM</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="docs" class="py-20 bg-bgFrame border-t border-borderCol">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16 space-y-3">
+                <h2 class="text-3xl font-bold"><i class="fa-solid fa-book-open text-accent mr-3"></i>Документация и FAQ</h2>
+                <p class="text-textMain">Все, что нужно знать перед использованием утилиты.</p>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-bgMain p-6 rounded-xl border border-borderCol">
+                    <h4 class="text-lg font-bold text-white mb-2">Безопасно ли использовать Citadel?</h4>
+                    <p class="text-textMain text-sm">Да. Программа не удаляет критически важные системные файлы. Перед внесением изменений в реестр Citadel принудительно запрашивает создание снимка системы, чтобы вы могли вернуться назад в любой момент.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="py-20 text-center max-w-7xl mx-auto px-6">
+        <div class="bg-gradient-to-r from-bgFrame to-bgMain border border-borderCol p-12 rounded-3xl relative overflow-hidden">
+            <div class="absolute inset-0 bg-accent opacity-5 blur-[80px] rounded-full -top-10"></div>
+            <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Готов ускорить свой ПК?</h2>
+            <p class="text-textMain max-w-xl mx-auto mb-8">Скачай Citadel бесплатно прямо сейчас. Чистая скорость без рекламы и вирусов.</p>
+            <a href="optimizer.exe" class="inline-flex bg-accent hover:bg-accentHover text-white text-xl font-bold px-10 py-5 rounded-xl transition neon-glow items-center space-x-3">
+                <i class="fa-solid fa-download"></i>
+                <span>Скачать Citadel Free</span>
+            </a>
+            <div class="mt-6 text-xs text-textMain">Совместимо с Windows 10 / 11 (x64) • Версия v2.1</div>
+        </div>
+        
+        <p class="mt-12 text-sm text-textMain">© 2026 Citadel System. Все права защищены. Разработано для геймеров и энтузиастов.</p>
+    </section>
+
+</body>
+</html>
